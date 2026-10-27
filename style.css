@@ -318,3 +318,19 @@ p { margin: 0; }
 /* Pages légales : texte courant à largeur de lecture */
 .legal h2 { margin-top: 36px; font-size: 24px; }
 .legal h2 + p, .legal p + p { margin-top: 10px; max-width: 70ch; color: var(--soft); }
+
+/* Actualités : une annonce par bloc, la plus récente en haut */
+.news { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; max-width: 820px; }
+.news-item { padding: 24px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); }
+.news-date { font-size: 14px; font-weight: 700; color: var(--green); }
+.news-item h2 { margin-top: 6px; font-size: 24px; line-height: 1.25; }
+.news-item > p { margin-top: 10px; color: var(--soft); max-width: 70ch; }
+.news-item h3 { margin-top: 18px; font-size: 18px; }
+.news-item .checks { margin-top: 10px; }
+
+/* Garantie et retours : deux colonnes côte à côte */
+.terms { margin-top: var(--space-inner); display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.terms > div { padding: 24px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); }
+.terms h3 { font-size: 20px; }
+.terms .checks { margin-top: 12px; }
+@media (max-width: 860px) { .terms { grid-template-columns: 1fr; } }
