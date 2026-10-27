@@ -319,14 +319,31 @@ p { margin: 0; }
 .legal h2 { margin-top: 36px; font-size: 24px; }
 .legal h2 + p, .legal p + p { margin-top: 10px; max-width: 70ch; color: var(--soft); }
 
-/* Actualités : une annonce par bloc, la plus récente en haut */
-.news { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; max-width: 820px; }
-.news-item { padding: 24px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); }
-.news-date { font-size: 14px; font-weight: 700; color: var(--green); }
-.news-item h2 { margin-top: 6px; font-size: 24px; line-height: 1.25; }
-.news-item > p { margin-top: 10px; color: var(--soft); max-width: 70ch; }
-.news-item h3 { margin-top: 18px; font-size: 18px; }
-.news-item .checks { margin-top: 10px; }
+/* Actualités « à la une » : la grande annonce en grand, les autres en cartes */
+.une { display: grid; grid-template-columns: 1.15fr 1fr; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); }
+.une-visu { min-height: 320px; display: grid; place-items: center; padding: 24px; text-align: center; background: radial-gradient(70% 80% at 30% 40%, rgba(153, 69, 255, .45), transparent 70%), radial-gradient(60% 70% at 80% 80%, rgba(20, 241, 149, .28), transparent 70%), var(--panel); }
+.une-visu span { font-size: clamp(36px, 5vw, 64px); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; }
+.une-txt { padding: 32px; background: var(--panel); }
+.une-txt h2 { margin-top: 10px; font-size: clamp(24px, 2.6vw, 30px); line-height: 1.15; }
+.une-txt > p:not(.news-meta) { margin-top: 12px; color: var(--soft); }
+.news-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 14px; font-weight: 700; color: var(--green); }
+.petites { margin-top: 16px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.petite { padding: 24px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); }
+.petite h2 { margin-top: 10px; font-size: 20px; line-height: 1.25; }
+.petite > p:not(.news-meta) { margin-top: 8px; color: var(--soft); }
+.explain { margin-top: 18px; }
+.explain summary { cursor: pointer; list-style: none; display: inline-flex; }
+.explain summary::-webkit-details-marker { display: none; }
+.explain[open] summary { margin-bottom: 14px; }
+.explain > p { margin-top: 10px; color: var(--soft); }
+.explain h3 { margin-top: 16px; font-size: 18px; }
+.explain .checks { margin-top: 10px; }
+.follow { margin-top: 24px; }
+@media (max-width: 860px) {
+  .une, .petites { grid-template-columns: 1fr; }
+  .une-visu { min-height: 180px; }
+  .une-txt { padding: 24px; }
+}
 
 /* Garantie et retours : deux colonnes côte à côte */
 .terms { margin-top: var(--space-inner); display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
