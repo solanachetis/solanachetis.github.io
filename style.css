@@ -351,3 +351,10 @@ p { margin: 0; }
 .terms h3 { font-size: 20px; }
 .terms .checks { margin-top: 12px; }
 @media (max-width: 860px) { .terms { grid-template-columns: 1fr; } }
+
+/* Sur téléphone, les catégories du dApp Store tiennent sur une ligne qui défile */
+@media (max-width: 640px) {
+  .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px 4px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; }
+}
