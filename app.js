@@ -25,10 +25,12 @@ const fr = new Intl.NumberFormat("fr-FR");
 
 async function rpc(method, params = []) {
   const r = await fetch(RPC, {
+    signal: AbortSignal.timeout(8000),
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }),
   });
+  if (!r.ok) throw new Error("RPC");
   const j = await r.json();
   if (!j.result) throw new Error(j.error?.message || "RPC");
   return j.result;
@@ -57,5 +59,5 @@ if (live) {
   refreshTps();
   refreshSlot();
   setInterval(refreshTps, 30000);
-  setInterval(() => document.hidden || refreshSlot(), 4000);
+  setInterval(() => document.hidden || refreshSlot(), 12000);
 }
