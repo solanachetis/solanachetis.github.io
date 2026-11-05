@@ -434,3 +434,5 @@ details[open] > summary .ouvrir { display: none; }
   .petite-img { margin-bottom: 16px; }
   .rappel { border-radius: var(--radius); }
 }
+.credit { margin-top: 8px; font-size: 13px; color: var(--soft); text-align: right; }
+@media (max-width: 900px) { .credit { text-align: center; } }
