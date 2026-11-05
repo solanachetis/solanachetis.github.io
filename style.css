@@ -380,3 +380,18 @@ p { margin: 0; }
 }
 @media (max-width: 560px) { .gallery { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .gallery img { transition: none; } .gallery figure:hover img { transform: none; } }
+
+/* Corrections de l'inspection du 5/11 */
+.nav { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); }
+.nav.nav-fin { -webkit-mask-image: none; mask-image: none; }
+@media (min-width: 901px) { .nav { -webkit-mask-image: none; mask-image: none; } }
+.page-top-media > div { min-width: 0; }
+.page-top-media .hero-media img { max-width: 360px; }
+@media (max-width: 900px) {
+  .hero-media img { max-height: 240px; object-fit: cover; }
+  .gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 8px; scrollbar-width: none; }
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery li { flex: 0 0 260px; scroll-snap-align: start; }
+}
+.brand-tag { white-space: nowrap; }
+@media (max-width: 640px) { .brand { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; line-height: 1.15; } .brand-logo { grid-row: span 2; } .brand-tag { display: block; font-size: 11px; line-height: 1.2; } }
