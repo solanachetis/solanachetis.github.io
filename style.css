@@ -409,3 +409,28 @@ details[open] > summary .ouvrir { display: none; }
   .steps > li { padding: 20px; }
   .steps > li::before { position: static; margin-bottom: 10px; }
 }
+
+/* Actualités, nouvelle mise en page (5/11) : une grande annonce, puis un fil illustré */
+.rappel { margin-top: 24px; display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 18px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 700; transition: border-color .2s; }
+.rappel:hover { border-color: var(--green); }
+.une { grid-template-columns: 1.3fr 1fr; align-items: stretch; }
+.une-visu { margin: 0; padding: 0; min-height: 0; background: #000; }
+.une-visu img { width: 100%; height: 100%; max-height: none; aspect-ratio: 5 / 4; object-fit: cover; }
+.une-txt { display: flex; flex-direction: column; justify-content: center; }
+.fil-titre { font-size: 24px; }
+.petites { margin-top: 20px; grid-template-columns: 1fr; gap: 16px; }
+.petite:last-child:nth-child(odd) { grid-column: auto; }
+.petite:has(> .petite-img) { display: grid; grid-template-columns: 300px 1fr; column-gap: 28px; align-items: start; }
+.petite:has(> .petite-img) > :not(.petite-img) { grid-column: 2; }
+.petite-img { grid-row: 1 / span 6; display: block; width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: cover; border-radius: 12px; background: #000; }
+.petite h2 { font-size: 22px; }
+.petite:target { border-color: var(--green); }
+@media (max-width: 900px) {
+  .une { grid-template-columns: 1fr; }
+  .une-visu img { height: auto; }
+}
+@media (max-width: 640px) {
+  .petite:has(> .petite-img) { display: block; }
+  .petite-img { margin-bottom: 16px; }
+  .rappel { border-radius: var(--radius); }
+}
