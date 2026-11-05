@@ -436,3 +436,19 @@ details[open] > summary .ouvrir { display: none; }
 }
 .credit { margin-top: 8px; font-size: 13px; color: var(--soft); text-align: right; }
 @media (max-width: 900px) { .credit { text-align: center; } }
+
+/* Fond du site (maquette 4 du 5/11) : halo violet et vert en haut de page + grain fin */
+body {
+  background-color: #0e0b1a;
+  background-image: radial-gradient(ellipse 900px 640px at 15% 40px, rgba(153, 69, 255, .42), rgba(153, 69, 255, .12) 45%, transparent 72%),
+    radial-gradient(ellipse 760px 520px at 90% 140px, rgba(20, 241, 149, .17), transparent 70%),
+    linear-gradient(180deg, #140e27 0, #0e0b1a 1100px);
+  background-repeat: no-repeat;
+  background-size: 100% 1100px;
+}
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 30; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1.6 0 0 0 -.5'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  opacity: .07;
+}
