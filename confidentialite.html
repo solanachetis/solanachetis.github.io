@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src https://solana-rpc.publicnode.com; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src https://solana-rpc.publicnode.com https://seekers-de-france-bot.meme-war-server.workers.dev ws://localhost:*; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Confidentialité — Seekers de France</title>
@@ -82,13 +82,16 @@
 <main id="contenu">
   <section class="block page-top legal">
     <h1>Confidentialité</h1>
-    <p class="intro">Seekers de France ne vous demande rien&nbsp;: pas de compte, pas de formulaire, pas de cookies, pas de mesure d’audience.</p>
+    <p class="intro">Seekers de France ne vous demande rien&nbsp;: pas de compte, pas de formulaire, pas de cookies, pas de mesure d’audience. Seule exception, si vous la demandez&nbsp;: la vérification du badge «&nbsp;Seeker vérifié&nbsp;», décrite plus bas.</p>
 
     <h2>Ce que l’hébergeur enregistre</h2>
     <p>Le site est hébergé par GitHub Pages. D’après GitHub, l’adresse IP des visiteurs est enregistrée et conservée pour des raisons de sécurité. Seekers de France n’a pas accès à ces données. <a class="link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">La page de GitHub sur ce sujet</a></p>
 
     <h2>Le compteur «&nbsp;Solana en direct&nbsp;»</h2>
     <p>Sur la page Le Seeker uniquement, votre navigateur demande les chiffres du réseau Solana à PublicNode, un service public. PublicNode voit donc votre adresse IP lors de cette demande. Aucune autre information n’est envoyée.</p>
+
+    <h2>Le badge «&nbsp;Seeker vérifié&nbsp;»</h2>
+    <p>Seulement si vous demandez le badge (page Badge Seeker vérifié)&nbsp;: votre navigateur envoie au serveur du bot Telegram (hébergé chez Cloudflare) l’adresse de votre portefeuille et le message que vous avez signé. Le serveur s’en sert pour vérifier votre Seeker auprès du réseau Solana, puis <strong>ne conserve que deux choses</strong>&nbsp;: l’identifiant du Genesis Token de votre Seeker et votre identifiant Telegram, pour qu’un même Seeker ne vérifie qu’un seul compte. L’adresse du portefeuille n’est pas conservée. Pour tout supprimer, écrivez <strong>/oublier</strong> au bot en privé.</p>
 
     <h2>Le reste du site</h2>
     <p>La police d’écriture, les images et le code sont servis par le site lui-même&nbsp;: aucun autre service n’est contacté pendant votre visite. Si vous cliquez sur un lien externe (Telegram, X, Solana Mobile…), ce sont les règles de ce site qui s’appliquent.</p>

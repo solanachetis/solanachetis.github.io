@@ -1,6 +1,8 @@
 // Détecteur d'arnaque : tout se passe dans le navigateur, rien n'est envoyé.
 // Testé par outils/test_detecteur.js (node outils/test_detecteur.js).
+// La partie entre DEBUT et FIN LOGIQUE est recopiée dans le bot Telegram (telegram/bot/sync.mjs).
 
+// --- DEBUT LOGIQUE ---
 const plain = (s) =>
   s.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase()
     .replace(/[’‘`´]/g, "'").replace(/\s+/g, " ");
@@ -146,8 +148,6 @@ function analyser(texte) {
   return { signaux: signaux.sort((a, b) => b.w - a.w), niveau };
 }
 
-if (typeof module !== "undefined") module.exports = { analyser };
-
 const TEXTES = {
   seed: ["Stop : on dirait une phrase de récupération", "Si ce sont vos vrais mots, ne les collez nulle part, même ici. Nous avons effacé le texte. Si vous les avez déjà donnés à quelqu'un ou collés sur un site, déplacez vos fonds vers un nouveau portefeuille au plus vite."],
   high: ["Très suspect", "Ne répondez pas, ne cliquez sur rien, ne signez rien. Ce message contient des signaux typiques d'arnaque."],
@@ -155,6 +155,9 @@ const TEXTES = {
   low: ["À surveiller", "Un signal faible. Ce n'est pas forcément une arnaque, mais vérifiez avant d'agir."],
   ok: ["Aucun signal connu", "Attention : notre outil ne repère que les arnaques courantes, et les arnaqueurs inventent sans cesse de nouvelles formules. Les règles restent les mêmes : ne donnez jamais vos 24 mots, ne signez rien que vous ne comprenez pas, et méfiez-vous de tout contact que vous n'avez pas demandé."],
 };
+// --- FIN LOGIQUE ---
+
+if (typeof module !== "undefined") module.exports = { analyser, ressembleAPhrase, TEXTES };
 
 const root = typeof document !== "undefined" && document.querySelector("[data-detect]");
 if (root) {
