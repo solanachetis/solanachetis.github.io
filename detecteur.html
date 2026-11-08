@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src https://solana-rpc.publicnode.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Détecteur d'arnaque — Seekers de France</title>
+<meta name="description" content="Un message vous semble suspect ? Collez-le : le détecteur d'arnaque repère les signaux classiques autour du Seeker et de Solana, dans votre navigateur.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Seekers de France">
+<meta property="og:title" content="Détecteur d'arnaque — Seekers de France">
+<meta property="og:description" content="Un message vous semble suspect ? Collez-le : le détecteur d'arnaque repère les signaux classiques autour du Seeker et de Solana, dans votre navigateur.">
+<meta property="og:image" content="https://solanachetis.github.io/img/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seekers de France : tout pour votre Seeker, en français. Communauté non officielle.">
+<meta property="og:url" content="https://solanachetis.github.io/detecteur.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://solanachetis.github.io/detecteur.html">
+<meta name="theme-color" content="#0e0b1a">
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="img/logo-180.png">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- Icônes dessinées : trait de 2px, bouts arrondis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M15 4l5 5L9 20H4v-5z"/><path d="M12.5 6.5l5 5M4 22h16"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v9h14v-9M12 8c-1.5-3-5.5-3.5-5.5-1.2S10 8 12 8zm0 0c1.5-3 5.5-3.5 5.5-1.2S14 8 12 8z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.8-3.4 8-8 9-4.6-1-8-4.2-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 13H6.2z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5V8m0 8v1.5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5M8 7.5h8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 3v4M17 5h4M5 17v4M3 19h4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M8 5l2 4M14 5l2 4"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12h13M13 7l5 5-5 5M4 6h6M4 18h6"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M3 14l18-7-6 13-3-6-9 0z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2L20 8H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3m-4 4 3 3m-5.5-.5 2 2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20z"/><path d="M12 10v4.5M12 17.5v.01"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html"><img class="brand-logo" src="img/logo.png" width="46" height="46" alt="">Seekers de France<span class="brand-tag">communauté non officielle</span></a>
+    <nav class="nav" aria-label="Onglets">
+      <a href="index.html">Accueil</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="seeker.html">Le Seeker</a>
+      <a href="demarrer.html">Démarrer</a>
+      <a href="securite.html">Sécurité</a>
+      <a href="dapp-store.html">Apps</a>
+      <a href="recompenses.html">Récompenses</a>
+      <a href="glossaire.html">Lexique</a>
+      <a href="pros.html">Développeurs</a>
+    </nav>
+    <a class="pill pill-quiet" href="aide.html"><span class="hide-sm">Demander de l’aide</span><span class="show-sm">Aide</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="block page-top amb amb-green">
+    <h1>Détecteur d’arnaque</h1>
+    <p class="intro">Un message vous semble bizarre&nbsp;? Collez-le ici. On y cherche les signaux classiques des arnaques autour du Seeker et de Solana.</p>
+
+    <div class="detect" data-detect>
+      <label class="detect-label" for="detect-text">Le message ou le lien reçu</label>
+      <textarea id="detect-text" rows="7" placeholder="Collez ici le message, le lien ou le texte du site…" spellcheck="false" data-detect-input></textarea>
+      <div class="detect-actions">
+        <button type="button" class="pill pill-main" data-detect-go>Analyser</button>
+        <button type="button" class="pill pill-quiet" data-detect-clear>Effacer</button>
+      </div>
+      <p class="detect-ex">Pas de message sous la main&nbsp;? Essayez un exemple&nbsp;:
+        <button type="button" class="chip" data-ex="0">Faux support</button>
+        <button type="button" class="chip" data-ex="1">Faux airdrop</button>
+        <button type="button" class="chip" data-ex="2">Faux revendeur</button>
+      </p>
+      <p class="warn"><strong>Confidentialité&nbsp;:</strong> l’analyse se fait dans votre navigateur. Votre texte n’est ni envoyé, ni enregistré, nulle part.</p>
+
+      <div class="verdict" data-detect-out hidden aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>À savoir avant de coller quoi que ce soit <span class="tag tag-advice">Notre conseil</span></h2>
+    <ul class="scams">
+      <li><h3>Un outil d’aide, pas un juge</h3><p>Il repère des signaux courants. Si rien n’apparaît, cela ne prouve pas que le message est sûr&nbsp;: dans le doute, ne cliquez pas et ne signez rien.</p></li>
+      <li><h3>Ne collez jamais vos 24 mots</h3><p>Même ici. Si un message vous les demande, c’est déjà une arnaque&nbsp;: collez le message, jamais votre phrase.</p></li>
+      <li><h3>Un lien suspect&nbsp;?</h3><p>N’ouvrez pas l’adresse. Passez par le dApp Store ou par le site officiel de Solana Mobile, tapé à la main.</p></li>
+      <li><h3>Vous avez déjà cliqué ou donné vos mots&nbsp;?</h3><p>Allez tout de suite à <a class="link" href="securite.html#perdu">la page Sécurité</a>&nbsp;: déplacez vos fonds vers un nouveau portefeuille avec une nouvelle phrase.</p></li>
+    </ul>
+    <p class="note">Cet outil est fait par la communauté, sans lien avec Solana Mobile. Pour la sécurité officielle, voir <a class="link" href="https://support.solanamobile.com">le support de Solana Mobile</a>.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><strong>Seekers de France</strong>. <a class="link" href="https://x.com/seekerdefrance">Suivez-nous sur X</a>. <a class="link" href="https://t.me/seekerdefrance">Rejoindre le groupe Telegram</a></p>
+  <p>Communauté non officielle, sans lien avec la Solana Foundation ni Solana Mobile. Rien ici n'est un conseil financier.</p>
+  <p>Les informations viennent de Solana Mobile et de solana.com (sources sur chaque page)&nbsp;; les étiquettes «&nbsp;Notre conseil&nbsp;» signalent nos recommandations.</p>
+  <p>Solana est une marque de la Solana Foundation&nbsp;; Seeker et Solana Mobile sont des marques de Solana Mobile.</p>
+  <p><a class="link" href="mentions-legales.html">Mentions légales</a> · <a class="link" href="confidentialite.html">Confidentialité</a></p>
+</footer>
+
+<script src="nav.js" defer></script>
+<script src="detecteur.js" defer></script>
+</body>
+</html>
