@@ -486,3 +486,17 @@ body::after {
 .signals span { display: block; margin-top: 4px; color: var(--soft); font-size: 15px; }
 .verdict-next { margin-top: 18px; color: var(--soft); font-size: 15px; }
 @media (max-width: 640px) { .verdict { padding: 18px; } .verdict-title { font-size: 21px; } }
+
+/* Détecteur mis en avant : bouton d'en-tête et bandeau d'accueil */
+.top-actions { display: flex; gap: 8px; align-items: center; }
+.pill-alert { gap: 8px; border: 1px solid rgba(255, 138, 150, .5); color: #ffb3bb; background: rgba(255, 107, 122, .08); }
+.pill-alert:hover { background: rgba(255, 107, 122, .16); }
+.ico-alert { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+@media (max-width: 640px) { .top-actions .pill { padding: 0 14px; } .top-actions .pill-alert { width: 44px; padding: 0; } .pill-alert .ico-alert { width: 20px; height: 20px; } .scam-band .ico { display: none; } }
+.scam-band { margin-top: 8px; display: flex; align-items: center; gap: 20px; padding: 22px 26px; border-radius: var(--radius); background: linear-gradient(90deg, rgba(255, 107, 122, .12), rgba(153, 69, 255, .1)); border: 1px solid rgba(255, 138, 150, .45); color: var(--ink); text-decoration: none; transition: border-color .2s; }
+.scam-band:hover { border-color: #ff8a96; }
+.scam-band .ico { width: 34px; height: 34px; flex: none; color: #ff8a96; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.scam-band > span:not(.pill) { flex: 1; color: var(--soft); }
+.scam-band strong { display: block; color: var(--ink); font-size: 20px; margin-bottom: 2px; }
+.scam-band .pill { flex: none; }
+@media (max-width: 640px) { .scam-band { flex-wrap: wrap; padding: 18px; gap: 14px; } .scam-band .pill { width: 100%; } }
