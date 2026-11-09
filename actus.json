@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "misAJour": "2026-11-03",
+  "actus": [
+    {
+      "id": "skr",
+      "date": "2026-11-03",
+      "dateTexte": "3 novembre 2026",
+      "etiquette": "Récompenses",
+      "alaune": false,
+      "titre": "SKR : Solana Mobile rachète et détruit des jetons chaque jour",
+      "resume": "Un programme de rachat suivi de destruction du SKR, le jeton de l’écosystème Seeker, tourne désormais tous les jours et dépasse 1,1 million de SKR détruits.",
+      "explication": [
+        "Le SKR est le jeton de l’écosystème Solana Mobile, celui des récompenses du Seeker. Dans son annonce du 3 novembre, Solana Mobile explique qu’elle utilise une partie de ses revenus pour acheter du SKR sur le marché, puis le « brûler » : les jetons sont définitivement détruits sur la blockchain et n’existent plus. Les achats ont commencé le 15 octobre 2026 et ont lieu chaque jour depuis.",
+        "L’argent vient de deux sources : les commissions gagnées par le validateur de Solana Mobile (un ordinateur qui aide à faire fonctionner le réseau Solana) et les frais des opérations faites dans le Seed Vault Wallet, comme les échanges ou le coffre USDC Earn Vault. La première commande mensuelle était de 24 573 USDC, et le premier achat quotidien, le 15 octobre, a détruit 60 885 SKR. Au 3 novembre, plus de 1,1 million de SKR avaient été détruits.",
+        "Pourquoi c’est important : moins de jetons en circulation, c’est un moyen de relier l’offre de SKR à l’usage réel de l’écosystème. Solana Mobile affirme que plus d’activité sur le Seeker, plus d’apps et de nouveaux partenaires comme Ledger devraient augmenter ses revenus, donc les montants rachetés."
+      ],
+      "effets": [
+        "Rien à faire : le programme tourne tout seul, sans action de votre part.",
+        "Chaque achat et chaque destruction est public : vous pouvez les vérifier sur un explorateur de blockchain, à l’adresse que Solana Mobile indique dans son article, qui publie aussi un total sur sa page SKR.",
+        "Les montants dépendent des revenus du moment : le rythme de destruction peut changer."
+      ],
+      "conseilTitre": "Restez prudent",
+      "conseils": [
+        "Ces chiffres viennent de Solana Mobile elle-même. Détruire des jetons ne garantit pas que le prix du SKR monte : il peut aussi baisser. Ce n’est pas un conseil financier."
+      ],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/skr-buy-and-burns-are-live"
+        }
+      ]
+    },
+    {
+      "id": "connect",
+      "date": "2026-10-21",
+      "dateTexte": "21 octobre 2026",
+      "etiquette": "Nouveauté",
+      "alaune": false,
+      "titre": "Seeker Connect : se connecter aux apps en un geste",
+      "resume": "Un bouton « Connect with Seeker » relie votre portefeuille aux apps qui l’adoptent, en un seul appui.",
+      "explication": [
+        "Seeker Connect est un outil pour les créateurs d’apps et de sites. Il remplace l’option technique « Mobile Wallet Adapter » par un bouton au nom du Seeker."
+      ],
+      "effets": [
+        "Plus besoin de choisir un « protocole » puis un portefeuille : un seul bouton.",
+        "Dans Chrome, Brave et Edge, plus de demande d’autorisation qui bloquait la connexion quand on la refusait.",
+        "Les autres portefeuilles continuent de fonctionner. Le bouton n’apparaît que dans les apps qui l’intègrent."
+      ],
+      "conseilTitre": null,
+      "conseils": [],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/seeker-connect-one-tap-solana-wallet-connection"
+        }
+      ]
+    },
+    {
+      "id": "clockin",
+      "date": "2026-10-20",
+      "dateTexte": "20 octobre 2026",
+      "etiquette": "Bon plan",
+      "alaune": false,
+      "titre": "Le Seeker à moitié prix jusqu’au 17 novembre",
+      "resume": "Solana Mobile vend le Seeker 250 $ au lieu de 500 $, livraison offerte, jusqu’à la fin de la conférence Breakpoint.",
+      "explication": [
+        "L’annonce figure dans le point d’étape du 20 octobre publié par Solana Mobile, qui fait aussi le bilan de CLOCK IN, son concours de création d’apps pour le Seeker. La remise court jusqu’au 17 novembre, dernier jour de Breakpoint, la grande conférence annuelle de Solana, qui se tient cette année à Londres du 15 au 17 novembre.",
+        "Pourquoi maintenant ? Solana Mobile compte déjà plus de 121 000 Seeker activés et un record de 793 développeurs qui créent des apps pour lui. Baisser le prix pendant Breakpoint, c’est attirer de nouveaux utilisateurs au moment où tout l’écosystème Solana regarde."
+      ],
+      "effets": [
+        "La remise de 50 % s’applique toute seule au paiement, sans code promo.",
+        "L’offre dure jusqu’au 17 novembre, dans la limite des stocks.",
+        "La boutique affiche 250 $ hors taxes et autres frais variables : le prix final peut être plus élevé.",
+        "Vous avez déjà un Seeker ? La Seeker Season continue, avec de nouvelles apps sur le dApp Store comme Xona, Mentioned et RUNUP."
+      ],
+      "conseilTitre": "Avant d’acheter",
+      "conseils": [
+        "Commandez uniquement sur store.solanamobile.com : une « promo Seeker » reçue en message privé ou sur un autre site est presque toujours une arnaque.",
+        "Avant de payer, vérifiez le total final et que la livraison vers la France est bien proposée."
+      ],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/the-clock-in-builds-are-in-what’s-next-on-seeker"
+        },
+        {
+          "nom": "La boutique officielle",
+          "url": "https://store.solanamobile.com"
+        }
+      ]
+    },
+    {
+      "id": "ledger",
+      "date": "2026-10-14",
+      "dateTexte": "14 octobre 2026",
+      "etiquette": "Partenariat",
+      "alaune": true,
+      "titre": "Ledger devient le premier partenaire matériel de Solana Mobile",
+      "resume": "L’app Seeker (dApp Store et portefeuille réunis) sera installée d’origine sur le Ledger Atom. Si vous avez un Seeker, rien ne change.",
+      "explication": [
+        "Annoncé à Paris, pendant l’événement Ledger Op3n 2026. Ledger lance un appareil de sécurité appelé Ledger Atom ; les signatures et validations y passent par son mode sécurisé."
+      ],
+      "effets": [
+        "Si vous avez un Seeker, rien ne change : il reste entièrement pris en charge.",
+        "Les apps du dApp Store, plus de 1 500 aujourd’hui sur le Seeker, doivent aussi arriver sur le Ledger Atom.",
+        "Le Ledger Atom sera vendu uniquement sur le site officiel de Ledger. Les réservations sont ouvertes ; ni prix ni date de livraison n’ont été annoncés."
+      ],
+      "conseilTitre": null,
+      "conseils": [],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/solana-mobile-announces-ledger-as-its-first-hardware-expansion-partner"
+        },
+        {
+          "nom": "La page de réservation de Ledger",
+          "url": "https://ledger.com/seeker"
+        }
+      ]
+    }
+  ]
+}
