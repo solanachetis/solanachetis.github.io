@@ -1,7 +1,36 @@
 {
   "version": 1,
-  "misAJour": "2026-11-03",
+  "misAJour": "2026-11-10",
   "actus": [
+    {
+      "id": "2026-11-10-clock-in-les-dix-apps-gagnantes-pour-le-",
+      "date": "2026-11-10",
+      "dateTexte": "10 novembre 2026",
+      "etiquette": "Nouveauté",
+      "alaune": false,
+      "titre": "CLOCK IN : les dix apps gagnantes pour le Seeker sont connues",
+      "resume": "Solana Mobile dévoile les gagnants de CLOCK IN, son concours d’apps pour le Seeker : dix projets primés, 135 000 $ de prix au total.",
+      "explication": [
+        "CLOCK IN est un concours (un « hackathon ») organisé par Solana Mobile avec RadiantsDAO : des équipes de développeurs devaient créer des apps mobiles crypto pensées pour le Seeker. Dans son annonce du 10 novembre, Solana Mobile révèle les dix gagnants principaux (125 000 $ en USDC) et deux prix spéciaux. Le 20 octobre, elle avait annoncé que les projets étaient passés en phase de jugement.",
+        "Le podium : Sprouts en première place (30 000 $), une app qui arrondit vos échanges au dollar supérieur et place la monnaie récupérée ; Vanna Protocol (25 000 $), pour le prêt et le trading ; Glyf (20 000 $), un clavier qui permet de payer. Suivent notamment Battle Cities, un jeu de chars, Gali, un jeu en monde ouvert, Mobiloot, qui met les récompenses de staking au service d’un forfait mobile, ou Envelope, pour des paiements privés. Deux prix spéciaux de 10 000 $ récompensent PAYtience (piste SKR) et Gali (piste ORE).",
+        "Pourquoi c’est important : ces apps montrent à quoi pourra servir votre Seeker. Plusieurs utilisent le SKR ou des fonctions du téléphone, par exemple le SKR pour le carburant de Battle Cities ou l’activation d’une eSIM depuis le Seeker avec Mobiloot. Les équipes gagnantes reçoivent une mise en avant dans le dApp Store, un soutien marketing et des Seeker."
+      ],
+      "effets": [
+        "Vous pouvez surveiller le dApp Store : les gagnants sont encouragés à y publier leurs apps, avec une mise en avant.",
+        "Plusieurs apps ont une utilité concrète (paiements, jeux, forfait mobile) et pas seulement de la finance.",
+        "Une app gagnante n’est pas forcément disponible tout de suite : l’annonce parle de projets à continuer d’améliorer avant publication."
+      ],
+      "conseilTitre": "Restez prudent",
+      "conseils": [
+        "Être primé ne veut pas dire sans risque. Avant d’utiliser une app qui touche à votre argent (prêt, trading, paiements), commencez par une toute petite somme que vous acceptez de perdre. Ce n’est pas un conseil financier."
+      ],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/clock-in-hackathon-winners"
+        }
+      ]
+    },
     {
       "id": "skr",
       "date": "2026-11-03",
