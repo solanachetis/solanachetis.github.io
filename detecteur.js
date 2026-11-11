@@ -3,8 +3,23 @@
 // La partie entre DEBUT et FIN LOGIQUE est recopiée dans le bot Telegram (telegram/bot/sync.mjs).
 
 // --- DEBUT LOGIQUE ---
+// Caractères invisibles (trait d'union optionnel, espaces de largeur nulle…) : un arnaqueur en glisse
+// dans « seed phrase » pour échapper aux règles. On les retire avant d'analyser.
+const INVISIBLES = /[­​-‍⁠﻿]/g;
+// Lettres cyrilliques ou grecques qui ressemblent à des lettres latines (un « е » russe dans « seed »).
+const SOSIES = {
+  "а": "a", "е": "e", "о": "o", "р": "p", "с": "c", "х": "x", "у": "y",
+  "і": "i", "ѕ": "s", "ј": "j", "һ": "h", "ԁ": "d", "к": "k", "м": "m",
+  "т": "t", "в": "b", "н": "h",
+  "ο": "o", "α": "a", "ρ": "p", "ν": "v", "ι": "i", "ε": "e", "κ": "k", "τ": "t",
+};
+const AUTRES_ALPHABETS = /[Ͱ-ϿЀ-ԯ]/g;
+// Une lettre latine collée à une lettre cyrillique ou grecque : des lettres déguisées dans un mot.
+const MELANGE = /[a-z][Ͱ-ϿЀ-ԯ]|[Ͱ-ϿЀ-ԯ][a-z]/i;
+
 const plain = (s) =>
-  s.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase()
+  s.normalize("NFKD").replace(INVISIBLES, "").replace(/\p{M}/gu, "").toLowerCase()
+    .replace(AUTRES_ALPHABETS, (c) => SOSIES[c] || c)
     .replace(/[’‘`´]/g, "'").replace(/\s+/g, " ");
 
 // Sites officiels : seuls ces domaines (et leurs sous-domaines) ne sont pas signalés.
@@ -219,6 +234,8 @@ function analyser(texte) {
   }
   if (ADRESSE.test(texte) && /(envoy|send|transf|depos|virement|paye)/.test(t))
     signaux.push({ w: 2, titre: "On vous demande d'envoyer des fonds à une adresse", aide: "Une transaction sur Solana ne s'annule pas. N'envoyez jamais de crypto à une adresse reçue d'un inconnu." });
+  if (MELANGE.test(texte.normalize("NFKD").replace(INVISIBLES, "")))
+    signaux.push({ w: 2, titre: "Des lettres d'un autre alphabet sont déguisées dans un mot", aide: "Certaines lettres de ce message viennent de l'alphabet russe ou grec, mais ressemblent à des lettres normales. C'est une ruse pour tromper les filtres ou imiter un vrai nom, un vrai site." });
   signaux.push(...analyserLiens(texte));
   const score = signaux.reduce((s, x) => s + x.w, 0);
   let niveau = "ok";
