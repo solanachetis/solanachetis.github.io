@@ -503,3 +503,6 @@ body::after {
 @media (max-width: 640px) { .scam-band { flex-wrap: wrap; padding: 18px; gap: 14px; } .scam-band .pill { width: 100%; } }
 .page-top .scam-band { margin-top: 24px; }
 .detect .pill:disabled { opacity: .5; cursor: wait; }
+/* Captures de l'application (page app.html) : toujours entières, jamais recadrées */
+.hero-media.tel img { max-width: 300px; max-height: none; object-fit: contain; border: 0; border-radius: 24px; }
+@media (max-width: 900px) { .hero-media.tel img { max-width: 260px; max-height: none; } }
