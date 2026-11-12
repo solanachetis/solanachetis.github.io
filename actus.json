@@ -1,7 +1,36 @@
 {
   "version": 1,
-  "misAJour": "2026-11-10",
+  "misAJour": "2026-11-11",
   "actus": [
+    {
+      "id": "2026-11-11-les-premiers-guardians-v-rifient-d-sorma",
+      "date": "2026-11-11",
+      "dateTexte": "11 novembre 2026",
+      "etiquette": "Sécurité",
+      "alaune": false,
+      "titre": "Les premiers Guardians vérifient désormais les apps du dApp Store",
+      "resume": "Solana Mobile présente les premiers « Guardians » tiers : des opérateurs indépendants qui contrôlent chaque nouvelle app et chaque mise à jour envoyée au dApp Store.",
+      "explication": [
+        "Le dApp Store est la boutique d’apps intégrée au Seeker. Avant, c’était Solana Mobile qui examinait les apps. Désormais, des Guardians votent aussi. Les premiers venus de l’extérieur sont Helius et Jito, qui rejoignent Solana Mobile. Anza, DoubleZero et Triton One doivent les rejoindre plus tard.",
+        "Le principe : chaque Guardian dépose une caution de 250 000 SKR pour participer, lance des contrôles automatiques (recherche de code malveillant, respect des règles de la boutique), puis vote pour approuver ou rejeter. Si assez de Guardians approuvent, la version passe à l’étape suivante de l’approbation. Les Guardians sont payés en SKR pour ce travail.",
+        "C’est important, car leurs votes sont enregistrés publiquement sur la blockchain : chacun peut voir quand et comment ils ont voté, dans un flux en direct sur le site de Solana Mobile. La vérification ne dépend plus d’une seule entreprise."
+      ],
+      "effets": [
+        "Rien ne change dans la façon de trouver et d’installer une app : tout se passe en coulisses.",
+        "Chaque nouvelle app et chaque mise à jour du dApp Store passe désormais par ce contrôle, et l’historique des votes est public.",
+        "Les apps déjà présentes restent dans la boutique ; leurs prochaines mises à jour seront examinées par les Guardians."
+      ],
+      "conseilTitre": "Restez prudent",
+      "conseils": [
+        "Cette vérification ne garantit pas qu’une app soit sûre ou sans défaut. Gardez vos réflexes : lisez ce qu’une app vous demande de signer et ne mettez pas plus d’argent que vous ne pouvez perdre."
+      ],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/introducing-the-first-solana-mobile-guardians"
+        }
+      ]
+    },
     {
       "id": "clock-in-gagnants",
       "date": "2026-11-10",
