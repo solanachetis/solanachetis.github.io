@@ -80,76 +80,96 @@
 </header>
 
 <main id="contenu">
-  <section class="block page-top legal">
+  <section class="block page-top legal" id="francais">
     <h1>Confidentialité</h1>
-    <p class="intro">Seeker de France ne vous demande rien&nbsp;: pas de compte, pas de formulaire, pas de cookies, pas de mesure d’audience. Seule exception, si vous la demandez&nbsp;: la vérification du badge «&nbsp;Seeker vérifié&nbsp;», décrite plus bas.</p>
-    <p><strong>Dernière mise à jour&nbsp;: 12 novembre 2026.</strong> · <a class="link" href="#english">Read this page in English</a></p>
+    <p class="intro">Seeker de France ne vous demande rien&nbsp;: pas de compte, pas de formulaire, pas de cookies, pas de mesure d’audience, pas de publicité. Seule exception, et seulement si vous la demandez sur le site&nbsp;: la vérification du badge «&nbsp;Seeker vérifié&nbsp;», décrite plus bas.</p>
+    <p><strong>Dernière mise à jour&nbsp;: 14 novembre 2026.</strong> · <a class="link" href="#english">Read this page in English</a></p>
 
     <h2>Qui est responsable</h2>
-    <p>Seeker de France, communauté française non officielle autour du Solana Seeker, sans lien avec Solana Mobile (<a class="link" href="mentions-legales.html">mentions légales</a>). Contact pour toute question sur vos données&nbsp;: <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>.</p>
-
-    <h2>Ce que l’hébergeur enregistre</h2>
-    <p>Le site est hébergé par GitHub Pages. D’après GitHub, l’adresse IP des visiteurs est enregistrée et conservée pour des raisons de sécurité. Seeker de France n’a pas accès à ces données. <a class="link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">La page de GitHub sur ce sujet</a></p>
-
-    <h2>Le compteur «&nbsp;Solana en direct&nbsp;»</h2>
-    <p>Sur la page Le Seeker uniquement, votre navigateur demande les chiffres du réseau Solana à PublicNode, un service public. PublicNode voit donc votre adresse IP lors de cette demande. Aucune autre information n’est envoyée.</p>
-
-    <h2>Le badge «&nbsp;Seeker vérifié&nbsp;»</h2>
-    <p>Seulement si vous demandez le badge (page Badge Seeker vérifié)&nbsp;: votre navigateur envoie au serveur du bot Telegram (hébergé chez Cloudflare) l’adresse de votre portefeuille et le message que vous avez signé. Le serveur s’en sert pour vérifier votre Seeker auprès du réseau Solana, puis <strong>ne conserve que deux choses</strong>&nbsp;: l’identifiant du Genesis Token de votre Seeker et votre identifiant Telegram, pour qu’un même Seeker ne vérifie qu’un seul compte. L’adresse du portefeuille n’est pas conservée. Ces deux données sont gardées tant que vous ne les supprimez pas. Pour tout supprimer, écrivez <strong>/oublier</strong> au bot en privé, ou écrivez à l’adresse de contact ci-dessus.</p>
+    <p>L’éditeur de Seeker de France, une personne physique qui publie sous le pseudonyme Solana Chetis (voir les <a class="link" href="mentions-legales.html">mentions légales</a>). Seeker de France est une communauté française non officielle autour du Solana Seeker, sans lien avec Solana Mobile. Contact pour toute question sur vos données&nbsp;: <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>.</p>
 
     <h2 id="app">L’application Android Seeker de France</h2>
-    <p>L’application ne demande ni compte, ni e-mail, ni autorisation sur votre téléphone, et ne contient aucune mesure d’audience ni publicité. Elle n’a aucun accès à votre portefeuille. La seule permission demandée est l’accès à internet.</p>
+    <p>L’application ne demande ni compte ni e-mail, ne contient aucune mesure d’audience ni publicité, et ne se connecte à aucun portefeuille. Elle ne demande qu’une seule permission&nbsp;: l’accès à internet.</p>
     <ul class="checks">
-      <li><strong>Sur votre téléphone seulement</strong>&nbsp;: les étapes du guide que vous cochez. Elles ne quittent jamais l’appareil et disparaissent si vous désinstallez l’app.</li>
-      <li><strong>Le détecteur d’arnaque</strong> analyse le message ou vos réponses sur le téléphone. Le texte n’est ni envoyé, ni enregistré, et disparaît quand vous quittez l’écran.</li>
-      <li><strong>Une seule connexion internet</strong>&nbsp;: l’onglet Actus lit le fichier public <code>actus.json</code> de ce site, comme un navigateur le ferait. Le site étant hébergé par GitHub Pages, GitHub peut enregistrer votre adresse IP (voir plus haut). Aucune autre donnée n’est envoyée. Sans connexion, l’app affiche les dernières actus reçues.</li>
+      <li><strong>Sur votre téléphone seulement</strong>&nbsp;: les étapes du guide que vous cochez et une copie des dernières actus reçues (pour les lire sans connexion). Elles ne sont envoyées à personne, ne font pas partie de la sauvegarde de votre compte Google, et disparaissent si vous désinstallez l’app ou effacez ses données.</li>
+      <li><strong>Le détecteur d’arnaque</strong> analyse le message ou vos réponses sur le téléphone. Le texte n’est ni envoyé, ni enregistré, et disparaît quand vous quittez l’écran. Le bouton «&nbsp;Coller&nbsp;» lit votre presse-papiers seulement au moment où vous appuyez dessus.</li>
+      <li><strong>Une seule connexion internet</strong>&nbsp;: l’onglet Actus télécharge le fichier public <code>actus.json</code> de ce site, par une connexion chiffrée. Comme pour toute page web, GitHub, qui héberge le site, reçoit alors votre adresse IP et les informations techniques que le téléphone envoie automatiquement (version d’Android, modèle de l’appareil). Rien d’autre n’est envoyé, et Seeker de France n’a pas accès à ces informations.</li>
       <li><strong>Les liens</strong> (X, Telegram, sources officielles) s’ouvrent dans une autre application. Ce sont alors les règles de ce service qui s’appliquent.</li>
     </ul>
 
+    <h2>Ce que l’hébergeur enregistre</h2>
+    <p>Le site est hébergé par GitHub Pages (GitHub, Inc., États-Unis). D’après GitHub, l’adresse IP des visiteurs est enregistrée et conservée pour des raisons de sécurité, pendant la durée fixée par GitHub. Seeker de France n’a pas accès à ces données. <a class="link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">La page de GitHub sur ce sujet</a> · <a class="link" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">la politique de confidentialité de GitHub</a></p>
+
+    <h2>Le compteur «&nbsp;Solana en direct&nbsp;»</h2>
+    <p>Sur la page Le Seeker du site uniquement, votre navigateur demande les chiffres du réseau Solana à PublicNode, un service public. PublicNode voit donc votre adresse IP lors de cette demande. Aucune autre information n’est envoyée.</p>
+
+    <h2>Le badge «&nbsp;Seeker vérifié&nbsp;» (site uniquement)</h2>
+    <p>Ce service existe <strong>seulement sur le site et dans le groupe Telegram</strong>&nbsp;: l’application ne le propose pas. Seulement si vous demandez le badge (page Badge Seeker vérifié)&nbsp;: votre navigateur envoie au serveur du bot Telegram (hébergé chez Cloudflare, États-Unis) l’adresse de votre portefeuille et le message que vous avez signé. Le serveur s’en sert pour vérifier votre Seeker auprès du réseau Solana, puis <strong>ne conserve que deux choses</strong>&nbsp;: l’identifiant du Genesis Token de votre Seeker et votre identifiant Telegram, pour qu’un même Seeker ne vérifie qu’un seul compte. L’adresse du portefeuille n’est pas conservée, et la page ne garde rien dans votre navigateur. Ces deux données sont gardées tant que vous ne les supprimez pas. Pour tout supprimer, écrivez <strong>/oublier</strong> au bot en privé, ou écrivez à l’adresse de contact ci-dessus.</p>
+
     <h2>Le reste du site</h2>
     <p>La police d’écriture, les images et le code sont servis par le site lui-même&nbsp;: aucun autre service n’est contacté pendant votre visite. Si vous cliquez sur un lien externe (Telegram, X, Solana Mobile…), ce sont les règles de ce site qui s’appliquent.</p>
+
+    <h2>Pourquoi et sur quelle base</h2>
+    <ul class="checks">
+      <li><strong>Faire fonctionner et sécuriser le site et l’app</strong> (journaux de GitHub, téléchargement des actus, compteur Solana)&nbsp;: intérêt légitime à fournir un service qui marche et qui est protégé.</li>
+      <li><strong>Le badge «&nbsp;Seeker vérifié&nbsp;»</strong>&nbsp;: votre demande. Vous pouvez la retirer à tout moment avec <strong>/oublier</strong>.</li>
+      <li><strong>Vous répondre</strong> si vous nous écrivez&nbsp;: votre demande. Vos messages sont gardés le temps nécessaire pour vous répondre.</li>
+    </ul>
+
+    <h2>Données traitées hors de l’Union européenne</h2>
+    <p>GitHub et Cloudflare sont des entreprises américaines, et PublicNode peut aussi traiter des données hors de l’Union européenne. Les informations décrites plus haut (adresse IP, informations techniques, données du badge) peuvent donc être traitées aux États-Unis, avec les garanties décrites dans les politiques de ces prestataires. Seeker de France ne vend aucune donnée et n’en partage avec personne d’autre.</p>
 
     <h2>Enfants</h2>
     <p>L’application et le site ne demandent aucune donnée personnelle et ne s’adressent pas particulièrement aux enfants. Nous ne collectons sciemment aucune donnée de mineurs. Le badge «&nbsp;Seeker vérifié&nbsp;» suppose d’avoir un Seeker et un compte Telegram.</p>
 
     <h2>Vos droits</h2>
-    <p>Vous pouvez demander l’accès à vos données, leur correction ou leur suppression en écrivant à <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>, dans le <a class="link" href="https://t.me/seekerdefrance">groupe Telegram</a> ou à <a class="link" href="https://x.com/seekerdefrance">Seeker de France sur X</a>. Vous pouvez aussi adresser une réclamation à la <a class="link" href="https://www.cnil.fr">CNIL</a>.</p>
+    <p>Vous pouvez demander l’accès à vos données, leur correction, leur suppression, leur limitation ou leur portabilité, vous opposer à leur utilisation et retirer votre accord à tout moment, en écrivant à <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>, dans le <a class="link" href="https://t.me/seekerdefrance">groupe Telegram</a> ou à <a class="link" href="https://x.com/seekerdefrance">Seeker de France sur X</a>. Pour les données gardées par GitHub, Cloudflare ou PublicNode, adressez-vous aussi à eux. Vous pouvez adresser une réclamation à la <a class="link" href="https://www.cnil.fr">CNIL</a>.</p>
   </section>
 
   <section class="block legal" id="english" lang="en">
     <h1>Privacy policy</h1>
-    <p class="intro">Seeker de France asks nothing of you: no account, no form, no cookies, no analytics. The only exception, and only if you ask for it, is the “Verified Seeker” badge check described below.</p>
-    <p><strong>Last updated: 12 November 2026.</strong> · <a class="link" href="#top">Lire cette page en français</a></p>
+    <p class="intro">Seeker de France asks nothing of you: no account, no form, no cookies, no analytics, no ads. The only exception, and only if you ask for it on the website, is the “Verified Seeker” badge check described below.</p>
+    <p><strong>Last updated: 14 November 2026.</strong> · <a class="link" href="#francais">Lire cette page en français</a></p>
 
     <h2>Who is responsible</h2>
-    <p>Seeker de France is an <strong>unofficial</strong> French-speaking community around the Solana Seeker, with no affiliation with Solana Mobile (<a class="link" href="mentions-legales.html">legal notice, in French</a>). Contact for any question about your data: <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>.</p>
+    <p>The publisher of Seeker de France, a private individual publishing under the pseudonym Solana Chetis (see the <a class="link" href="mentions-legales.html#english">legal notice</a>). Seeker de France is an <strong>unofficial</strong> French-speaking community around the Solana Seeker, with no affiliation with Solana Mobile. Contact for any question about your data: <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>.</p>
 
-    <h2>What the host records</h2>
-    <p>The website is hosted by GitHub Pages. According to GitHub, visitors’ IP addresses are recorded and kept for security reasons. Seeker de France has no access to this data. <a class="link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub’s page on this topic</a></p>
-
-    <h2>The “Solana live” counter</h2>
-    <p>On the Seeker page only, your browser requests Solana network figures from PublicNode, a public service. PublicNode therefore sees your IP address for that request. No other information is sent.</p>
-
-    <h2>The “Verified Seeker” badge</h2>
-    <p>Only if you ask for the badge: your browser sends your wallet address and the message you signed to the Telegram bot’s server (hosted on Cloudflare). The server uses them to check your Seeker on the Solana network, then <strong>keeps only two things</strong>: your Seeker’s Genesis Token ID and your Telegram ID, so that one Seeker can verify only one account. The wallet address is not kept. These two items are kept until you delete them. To delete everything, message the bot privately with <strong>/oublier</strong>, or write to the contact address above.</p>
-
-    <h2>The Seeker de France Android app</h2>
-    <p>The app asks for no account, no email and no phone permission other than internet access, and contains no analytics and no ads. It has no access to your wallet.</p>
+    <h2 id="app-en">The Seeker de France Android app</h2>
+    <p>The app asks for no account and no email, contains no analytics and no ads, and does not connect to any wallet. It requests only one permission: internet access.</p>
     <ul class="checks">
-      <li><strong>On your phone only:</strong> the guide steps you tick. They never leave the device and are removed if you uninstall the app.</li>
-      <li><strong>The scam detector</strong> analyses the message or your answers on the phone. The text is neither sent nor stored, and disappears when you leave the screen.</li>
-      <li><strong>One internet connection:</strong> the News tab reads the public <code>actus.json</code> file of this website, as a browser would. Since the site is hosted by GitHub Pages, GitHub may record your IP address (see above). No other data is sent. Offline, the app shows the latest news it received.</li>
+      <li><strong>On your phone only:</strong> the guide steps you tick and a copy of the latest news received (to read it offline). They are sent to no one, are not part of your Google account backup, and are removed if you uninstall the app or clear its data.</li>
+      <li><strong>The scam detector</strong> analyses the message or your answers on the phone. The text is neither sent nor stored, and disappears when you leave the screen. The “Coller” (Paste) button reads your clipboard only at the moment you tap it.</li>
+      <li><strong>One internet connection:</strong> the News tab downloads the public <code>actus.json</code> file of this website, over an encrypted connection. As with any web page, GitHub, which hosts the site, then receives your IP address and the technical information your phone sends automatically (Android version, device model). Nothing else is sent, and Seeker de France has no access to this information.</li>
       <li><strong>Links</strong> (X, Telegram, official sources) open in another app. That service’s own rules then apply.</li>
     </ul>
 
+    <h2>What the host records</h2>
+    <p>The website is hosted by GitHub Pages (GitHub, Inc., United States). According to GitHub, visitors’ IP addresses are recorded and kept for security reasons, for the period set by GitHub. Seeker de France has no access to this data. <a class="link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub’s page on this topic</a> · <a class="link" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a></p>
+
+    <h2>The “Solana live” counter</h2>
+    <p>On the website’s Seeker page only, your browser requests Solana network figures from PublicNode, a public service. PublicNode therefore sees your IP address for that request. No other information is sent.</p>
+
+    <h2>The “Verified Seeker” badge (website only)</h2>
+    <p>This service exists <strong>only on the website and in the Telegram group</strong>: the app does not offer it. Only if you ask for the badge: your browser sends your wallet address and the message you signed to the Telegram bot’s server (hosted on Cloudflare, United States). The server uses them to check your Seeker on the Solana network, then <strong>keeps only two things</strong>: your Seeker’s Genesis Token ID and your Telegram ID, so that one Seeker can verify only one account. The wallet address is not kept, and the page stores nothing in your browser. These two items are kept until you delete them. To delete everything, message the bot privately with <strong>/oublier</strong>, or write to the contact address above.</p>
+
     <h2>The rest of the website</h2>
     <p>The font, images and code are served by the site itself: no other service is contacted during your visit. If you click an external link (Telegram, X, Solana Mobile…), that site’s rules apply.</p>
+
+    <h2>Why, and on what basis</h2>
+    <ul class="checks">
+      <li><strong>Running and securing the website and the app</strong> (GitHub logs, news download, Solana counter): legitimate interest in providing a service that works and is protected.</li>
+      <li><strong>The “Verified Seeker” badge:</strong> your request. You can withdraw it at any time with <strong>/oublier</strong>.</li>
+      <li><strong>Answering you</strong> if you write to us: your request. Your messages are kept as long as needed to answer you.</li>
+    </ul>
+
+    <h2>Data processed outside the European Union</h2>
+    <p>GitHub and Cloudflare are US companies, and PublicNode may also process data outside the European Union. The information described above (IP address, technical information, badge data) may therefore be processed in the United States, with the safeguards described in these providers’ policies. Seeker de France sells no data and shares it with no one else.</p>
 
     <h2>Children</h2>
     <p>The app and the website ask for no personal data and are not specifically aimed at children. We do not knowingly collect data from minors. The “Verified Seeker” badge requires owning a Seeker and a Telegram account.</p>
 
     <h2>Your rights</h2>
-    <p>You can ask for access to, correction of or deletion of your data by writing to <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>, in the <a class="link" href="https://t.me/seekerdefrance">Telegram group</a> or to <a class="link" href="https://x.com/seekerdefrance">Seeker de France on X</a>. You may also file a complaint with the French data protection authority, the <a class="link" href="https://www.cnil.fr/en">CNIL</a>.</p>
+    <p>You can ask for access to, correction, deletion, restriction or portability of your data, object to its use and withdraw your consent at any time, by writing to <a class="link" href="mailto:solanachetis@gmail.com">solanachetis@gmail.com</a>, in the <a class="link" href="https://t.me/seekerdefrance">Telegram group</a> or to <a class="link" href="https://x.com/seekerdefrance">Seeker de France on X</a>. For data kept by GitHub, Cloudflare or PublicNode, you may also contact them directly. You may file a complaint with the French data protection authority, the <a class="link" href="https://www.cnil.fr/en">CNIL</a>.</p>
   </section>
 </main>
 
