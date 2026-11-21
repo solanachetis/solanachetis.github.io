@@ -90,6 +90,36 @@
       ]
     },
     {
+      "id": "2026-11-01-une-fausse-app-skr-claim-est-pass-e-par-",
+      "date": "2026-11-01",
+      "dateTexte": "1er novembre 2026",
+      "etiquette": "Sécurité",
+      "alaune": false,
+      "titre": "Une fausse app « SKR Claim » est passée par le dApp Store",
+      "resume": "Pendant environ une heure, une app malveillante mise en avant dans le dApp Store demandait aux utilisateurs leur phrase de récupération. Solana Mobile l’a retirée.",
+      "explication": [
+        "Solana Mobile l’a annoncé le 1er novembre sur son compte X officiel. Une app appelée « SKR Claim », envoyée par une personne extérieure, a été soumise au dApp Store, la boutique d’apps du Seeker. Après un accès non autorisé au portail de publication des apps, la zone « App Spotlight » (les apps mises en avant) et l’écran des Quêtes ont été modifiés pour la montrer. L’app demandait de saisir sa phrase de récupération, c’est-à-dire la liste de mots secrets qui permet de prendre le contrôle d’un portefeuille.",
+        "Elle est restée en avant pendant une heure, puis a été retirée de la boutique. Solana Mobile indique la supprimer aussi des téléphones où elle avait été installée. Son équipe a trouvé et corrigé le défaut qui permettait de faire un lien vers une app qui n’était pas entièrement publiée.",
+        "Pourquoi c’est important : le nom « SKR Claim » imitait une récupération de SKR, le jeton du Seeker, et l’app apparaissait dans la boutique officielle. Même un endroit de confiance peut, rarement, afficher un piège. Solana Mobile rappelle qu’elle ne vous demandera jamais votre phrase de récupération, ni des cryptos, ni de connecter votre portefeuille à une autre app ou à un site pour recevoir une distribution de jetons."
+      ],
+      "effets": [
+        "Si vous n’avez rien saisi dans une app « SKR Claim », vous n’avez rien à faire : l’app a été retirée et le défaut corrigé.",
+        "Si elle est encore sur votre Seeker, supprimez-la : Solana Mobile est en train de la retirer des téléphones.",
+        "Une demande de phrase de récupération, de cryptos ou de connexion du portefeuille « pour recevoir des SKR » est toujours une arnaque, d’après Solana Mobile elle-même."
+      ],
+      "conseilTitre": "Si vous avez saisi vos mots",
+      "conseils": [
+        "Considérez ce portefeuille comme perdu : créez-en un nouveau et transférez-y au plus vite ce qui reste, depuis votre Seeker.",
+        "Ne tapez jamais vos mots secrets dans une app ou un site, même si elle apparaît dans la boutique officielle."
+      ],
+      "sources": [
+        {
+          "nom": "Le post de Solana Mobile sur X (en anglais)",
+          "url": "https://x.com/solanamobile/status/2116962140301266959"
+        }
+      ]
+    },
+    {
       "id": "connect",
       "date": "2026-10-21",
       "dateTexte": "21 octobre 2026",
