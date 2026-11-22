@@ -23,7 +23,7 @@ const plain = (s) =>
     .replace(/[’‘`´]/g, "'").replace(/\s+/g, " ");
 
 // Sites officiels : seuls ces domaines (et leurs sous-domaines) ne sont pas signalés.
-const OFFICIELS = ["solanamobile.com", "solana.com", "solana.org", "solanafoundation.org", "solanachetis.github.io"];
+const OFFICIELS = ["solanamobile.com", "solana.com", "solana.org", "solanafoundation.org", "solanachetis.github.io", "seekerdefrance.com"];
 const RACCOURCIS = ["bit.ly", "tinyurl.com", "cutt.ly", "t.co", "rb.gy", "is.gd", "shorturl.at", "linktr.ee", "ow.ly", "buff.ly", "rebrand.ly", "t.ly", "s.id", "goo.gl", "tiny.cc", "lnkd.in"];
 const TLD_RISQUE = ["xyz", "top", "click", "site", "online", "icu", "shop", "live", "cc", "tk", "ml", "ga", "cf", "gq", "pw", "buzz", "rest", "lol", "monster", "cyou", "sbs", "cfd", "bond", "fun", "vip", "win", "pro", "info", "biz", "app", "link", "claims", "network", "finance", "dev"];
 // Pour reconnaître une adresse écrite sans « https:// »
