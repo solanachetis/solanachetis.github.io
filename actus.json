@@ -1,7 +1,39 @@
 {
   "version": 1,
-  "misAJour": "2026-11-11",
+  "misAJour": "2026-11-23",
   "actus": [
+    {
+      "id": "trois-nouveautes",
+      "date": "2026-11-23",
+      "dateTexte": "23 novembre 2026",
+      "etiquette": "Récompenses",
+      "alaune": false,
+      "titre": "Seeker Season : quatre apps offrent des avantages aux possesseurs de Seeker",
+      "resume": "Dans sa lettre de novembre, Solana Mobile liste les bonus réservés aux possesseurs de Seeker dans quatre apps du dApp Store, et de nouvelles arrivées dans la boutique.",
+      "explication": [
+        "Solana Mobile publie régulièrement un point d’étape sur son blog. Celui du 23 novembre reprend d’abord des annonces déjà expliquées ici : l’arrivée de l’app Seeker sur le Ledger Atom, les premiers Guardians qui vérifient les apps, les gagnants de CLOCK IN, le rachat-destruction du SKR et Seeker Connect. La nouveauté, ce sont les avantages de la Seeker Season en cours, que Solana Mobile appelle « Seeker Season 2 ».",
+        "Le principe d’une saison : des apps choisies offrent un bonus à celles et ceux qui les utilisent avec un Seeker. Cette fois, quatre apps sont citées, toutes disponibles dès maintenant dans le dApp Store."
+      ],
+      "effets": [
+        "Byefun (cartes à collectionner) : 20 % de points en plus et un tirage au sort chaque semaine, réservé aux Seeker, pour gagner des cartes notées.",
+        "BlockRips : chaque Seeker a droit à un tirage gratuit, avec une chance d’obtenir une carte notée.",
+        "Panda Merge (jeu où l’on fait grandir un panda) : un cadeau gratuit, 10 % de revenus en plus dans le jeu, à vie, et votre nom en .skr affiché au classement.",
+        "Twist (vidéos courtes dont on devine la fin) : un badge exclusif était offert aux inscrits de la semaine de lancement.",
+        "Le dApp Store a passé le cap des 1 500 apps le 22 octobre. Parmi les nouvelles venues, le jeu de stratégie Turnfolk donne 600 « Crowns » et des objets rares aux détenteurs du Seeker Genesis Token (le jeton unique de votre Seeker)."
+      ],
+      "conseilTitre": "Jouez sans risque",
+      "conseils": [
+        "Les tirages et les paquets de cartes reposent sur le hasard : profitez des tirages gratuits, mais ne dépensez pas d’argent en espérant gagner.",
+        "La lettre cite aussi des apps de trading (copie de traders, paris sur des prédictions) : elles peuvent faire perdre de l’argent. Ce n’est pas un conseil d’investissement.",
+        "Installez ces apps uniquement depuis le dApp Store de votre Seeker, jamais depuis un lien reçu en message privé."
+      ],
+      "sources": [
+        {
+          "nom": "Le blog de Solana Mobile (en anglais)",
+          "url": "https://solanamobile.com/blog/three-firsts-for-seeker-hardware-expansion-new-guardians-and-skr-burns"
+        }
+      ]
+    },
     {
       "id": "guardians",
       "date": "2026-11-11",
@@ -150,8 +182,8 @@
       "dateTexte": "20 octobre 2026",
       "etiquette": "Bon plan",
       "alaune": false,
-      "titre": "Le Seeker à moitié prix jusqu’au 17 novembre",
-      "resume": "Solana Mobile vend le Seeker 250 $ au lieu de 500 $, livraison offerte, jusqu’à la fin de la conférence Breakpoint.",
+      "titre": "Offre terminée : le Seeker était à moitié prix jusqu’au 17 novembre",
+      "resume": "Solana Mobile a vendu le Seeker 250 $ au lieu de 500 $, livraison offerte, jusqu’à la fin de la conférence Breakpoint. L’offre est finie : la boutique affiche de nouveau 500 $ (vérifié le 24 novembre 2026).",
       "explication": [
         "L’annonce figure dans le point d’étape du 20 octobre publié par Solana Mobile, qui fait aussi le bilan de CLOCK IN, son concours de création d’apps pour le Seeker. La remise court jusqu’au 17 novembre, dernier jour de Breakpoint, la grande conférence annuelle de Solana, qui se tient cette année à Londres du 15 au 17 novembre.",
         "Pourquoi maintenant ? Solana Mobile compte déjà plus de 121 000 Seeker activés et un record de 793 développeurs qui créent des apps pour lui. Baisser le prix pendant Breakpoint, c’est attirer de nouveaux utilisateurs au moment où tout l’écosystème Solana regarde."
