@@ -186,6 +186,37 @@
       ]
     },
     {
+      "id": "2026-10-26-mise-jour-mr10-du-seeker-s-curit-de-sept",
+      "date": "2026-10-26",
+      "dateTexte": "26 octobre 2026",
+      "etiquette": "Mise à jour",
+      "alaune": false,
+      "titre": "Mise à jour MR10 du Seeker : sécurité de septembre et coffre-fort du Seeker prêt pour les grandes transactions",
+      "resume": "Solana Mobile a publié les notes de la mise à jour MR10 du Seeker : des correctifs de sécurité et un coffre-fort du Seeker capable de signer des transactions plus grandes.",
+      "explication": [
+        "Chaque mise à jour du système du Seeker porte un numéro (« MR » suivi d’un chiffre), et Solana Mobile en détaille le contenu dans sa documentation officielle. La page de la MR10 y est datée du 26 octobre 2026. Elle suit la MR9, qui apportait les correctifs de sécurité d’août et une meilleure fidélité des couleurs des vidéos HDR10.",
+        "Cette fois, deux choses changent. D’abord la sécurité : la MR10 ajoute les correctifs de sécurité Android et ceux du fabricant des composants pour septembre 2026, ainsi que diverses corrections de bugs. Ensuite le coffre-fort du Seeker, le coffre intégré au Seeker qui garde vos clés et signe vos opérations : il accepte maintenant des transactions jusqu’à 4 096 octets.",
+        "Pourquoi c’est important : Solana prépare des transactions plus grandes, appelées « Transaction V1 » (proposition SIMD-0296). Une transaction plus grande peut contenir plus d’informations en une seule fois. Avec cette mise à jour, le coffre-fort du Seeker de votre Seeker pourra les signer entièrement, quand les apps commenceront à les utiliser."
+      ],
+      "effets": [
+        "Votre Seeker reçoit les correctifs de sécurité de septembre 2026 : des failles connues d’Android sont corrigées.",
+        "Le coffre-fort du Seeker est prêt pour les transactions plus grandes de Solana (jusqu’à 4 096 octets).",
+        "La mise à jour est légère : 191 Mo pour les Seeker « Global » (numéro de série commençant par SM02G) et 189 Mo pour les Seeker européens (numéro commençant par SM02E).",
+        "Votre numéro de série se trouve dans Paramètres > À propos du téléphone > Modèle et matériel."
+      ],
+      "conseilTitre": "Installez-la depuis le téléphone",
+      "conseils": [
+        "Les mises à jour du système arrivent par le téléphone lui-même. N’installez jamais un fichier de « mise à jour » reçu par lien ou en message privé : c’est une arnaque courante.",
+        "Branchez votre Seeker ou vérifiez que sa batterie est bien chargée avant d’installer une mise à jour."
+      ],
+      "sources": [
+        {
+          "nom": "La documentation de Solana Mobile (en anglais)",
+          "url": "https://docs.solanamobile.com/seeker/release-notes/mr10"
+        }
+      ]
+    },
+    {
       "id": "connect",
       "date": "2026-10-21",
       "dateTexte": "21 octobre 2026",
